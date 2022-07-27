@@ -1,3 +1,4 @@
+
 def return_10():
     return 10
 
@@ -9,3 +10,9 @@ def subtract(x, y):
 
 def multiply(x ,y):
     return x * y
+
+def divide(x, y):
+    return x/y
+
+def length_of_string(string):
+    return len(string)
