@@ -66,24 +66,43 @@ class TestPythonFunctionPractice(unittest.TestCase):
   #Further
 
   #Given the length of a side of a cube calculate the volume
-  def test_volume_of_cube(self):
+  def test_volume_of_cube_2(self):
+    #add test code here
+    volume = volume_of_cube(2)
+    self.assertEqual(8, volume)
+    
+  def test_volume_of_cube_3(self):
     #add test code here
     volume = volume_of_cube(3)
     self.assertEqual(27, volume)
-    
 
   #Given a String, return the String reversed
-  def test_reverse_string(self):
+  def test_reverse_string_abcd(self):
     reversed = reverse_string("abcd")
     #add test code here
-    self.assertEqual("dcba",reversed)
+    self.assertEqual("dcba", reversed)
+
+  def test_reverse_string_123456(self):
+    reversed = reverse_string("123456")
+    #add test code here
+    self.assertEqual("654321", reversed)
 
   #Given a value in farenheit, convert this into celsius.
-  def test_fahrenheit_to_celsius(self):
+  def test_fahrenheit_to_celsius_32f(self):
+    #add test code here
+    convertedCelsius = fahrenheit_to_celsius(32)
+    self.assertEqual(0, convertedCelsius)
+
+  def test_fahrenheit_to_celsius_100f(self):
     #add test code here
     convertedCelsius = fahrenheit_to_celsius(100)
     self.assertEqual(37.8, convertedCelsius)
-    pass
+
+    
+  def test_fahrenheit_to_celsius_212f(self):
+    #add test code here
+    convertedCelsius = fahrenheit_to_celsius(212)
+    self.assertEqual(100, convertedCelsius)
 
 
 if __name__ == '__main__':
